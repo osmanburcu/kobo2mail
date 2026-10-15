@@ -30,7 +30,7 @@
       "hide_empty": true,
       "group_headers": true,
       "pdf": true,
-      "pdf_title": "Copy of your submission {}",
+      "pdf_title": "Copy of your submission ($name)",
       "pdf_filename": "submission-$submission_id.pdf"
     }
   }
