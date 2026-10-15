@@ -2,7 +2,7 @@
   "provider": "gmail",
   "forms": {
     "default": {
-      "email_field": "contact/email",
+      "email_field": "email_field",
       "from_name": "Survey team",
       "subject": "Thank you $name - copy of your submission",
       "title": "Thank you, $name!",
@@ -13,13 +13,14 @@
       "exclude": ["_*", "meta/*", "formhub/*", "start", "end", "contact/email", "consent"],
       "labels": {
         "contact": "Your details",
-        "contact/name": "Full name",
-        "contact/phone": "Phone number",
+        "name": "Full name",
+        "phone": "Phone number",
         "services_used": "Services used",
         "satisfaction": "Overall satisfaction",
         "household": "Household member",
         "member_name": "Name",
-        "member_age": "Age"
+        "member_age": "Age",
+        "aaaa":"Total number of family members"
       },
       "value_labels": {
         "gender": {"f": "Female", "m": "Male", "o": "Other"},
