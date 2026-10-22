@@ -14,13 +14,15 @@
       "labels": {
         "contact": "Your details",
         "deployment_details/deployee_name": "Full name",
+        "deployment_overview/thematic_focus_primary":"1. What is your deployment’s primary thematic focus area?",
         "deployment_overview/_3_Institutional_Cap_eployment_supporting":"3. Institutional Capability: What response phase is your deployment supporting?"
       },
       "value_labels": {
         "gender": {"f": "Female", "m": "Male", "o": "Other"},
         "services_used": {"water": "Water point", "health": "Health clinic", "school": "School"},
         "satisfaction": {"1": "Very unsatisfied", "2": "Unsatisfied", "3": "Neutral", "4": "Satisfied", "5": "Very satisfied"},
-        "deployment_overview/_3_Institutional_Cap_eployment_supporting":{"preparednes": "Preparedness", "response":"Response","recovery":"recovery"}
+        "deployment_overview/_3_Institutional_Cap_eployment_supporting":{"preparednes": "Preparedness", "response":"Response","recovery":"Recovery"},
+        "deployment_overview/thematic_focus_primary":{"gedsi":"GEDSI","protection":"Protection","drm":"Disaster Risk Management"}
       },
       "hide_empty": false,
       "group_headers": true,
