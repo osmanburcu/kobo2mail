@@ -2,7 +2,7 @@
   "provider": "gmail",
   "forms": {
     "default": {
-      "deployment_details/Mail": "email_field",
+      "EMAIL_FIELD": "EMAIL_FIELD",
       "from_name": "Survey team",
       "subject": "Thank you $deployment_details/deployee_name - copy of your submission",
       "title": "Thank you, $deployment_details/deployee_name!",
