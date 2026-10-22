@@ -24,6 +24,7 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       vars.EMAIL_FIELD == '' ||
+      github.event.client_payload.submission[vars.EMAIL_FIELD] != ''
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
