@@ -23,7 +23,7 @@ jobs:
     # without an address never starts a runner. Unset = the script decides.
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      vars.EMAIL_FIELD == ''
+      vars.EMAIL_FIELD == '' ||
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
