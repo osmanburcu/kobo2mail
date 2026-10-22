@@ -7,7 +7,7 @@ from pathlib import Path
 PROVIDERS = ("gmail", "smtp")
 
 DEFAULT_FORM = {
-    "email_field": "",
+    "deployment_details/Mail": "",
     "subject": "Your submission",
     "template": "templates/default.html",
     "title": "Thank you for your submission",
