@@ -15,6 +15,8 @@ from .fields import find_recipient
 from .mailer import MailError, build_message, send
 from .pdf import PdfError, render_pdf
 from .render import render_email
+from .form_order import apply_form_order
+
 
 IN_ACTIONS = os.environ.get("GITHUB_ACTIONS") == "true"
 
@@ -100,6 +102,8 @@ def main(argv=None):
         Path(args.preview).write_text(html, encoding="utf-8")
         log(f"Preview written to {args.preview}")
         return 0
+
+    submission = apply_form_order(submission)
 
     if args.pdf_out:
         try:
