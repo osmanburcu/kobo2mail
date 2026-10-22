@@ -82,10 +82,10 @@ def main(argv=None):
         cfg["template"], cfg["template_path"] = args.template, Path(args.template)
     log(f"Form {submission.get('_xform_id_string', '?')}, submission {submission.get('_id', '?')}")
 
-    recipient = find_recipient(submission, cfg["EMAIL_FIELD"])
+    recipient = find_recipient(submission, cfg["deployment_details/EMAIL_FIELD"])
     mask(recipient)
     if not recipient:
-        where = f"field '{cfg['EMAIL_FIELD']}'" if cfg["EMAIL_FIELD"] else "any *email field"
+        where = f"field '{cfg['deployment_details/EMAIL_FIELD']}'" if cfg["deployment_details/EMAIL_FIELD"] else "any *email field"
         log(f"No valid recipient in {where}; nothing to send.")
         return 0
 
