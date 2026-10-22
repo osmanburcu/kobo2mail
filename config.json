@@ -4,8 +4,8 @@
     "default": {
       "EMAIL_FIELD": "EMAIL_FIELD",
       "from_name": "Survey team",
-      "subject": "Thank you $deployment_details/deployee_name - copy of your submission",
-      "title": "Thank you, $deployment_details/deployee_name!",
+      "subject": "Thank you $deployee_name - copy of your submission",
+      "title": "Thank you, $deployee_name!",
       "intro": "We have received your answers. Here is a copy for your records.",
       "brand_color": "#2b6cb0",
       "logo_url": "",
