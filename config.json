@@ -14,13 +14,7 @@
       "labels": {
         "contact": "Your details",
         "deployment_details/deployee_name": "Full name",
-        "phone": "Phone number",
-        "services_used": "Services used",
-        "satisfaction": "Overall satisfaction",
-        "household": "Household member",
-        "member_name": "Name",
-        "member_age": "Age",
-        "aaaa":"Total number of family members"
+        "deployment_overview/_3_Institutional_Cap_eployment_supporting":"3. Institutional Capability: What response phase is your deployment supporting?"
       },
       "value_labels": {
         "gender": {"f": "Female", "m": "Male", "o": "Other"},
