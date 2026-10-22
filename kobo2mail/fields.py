@@ -48,10 +48,10 @@ def format_value(path, value, cfg):
     return text
 
 
-def find_recipient(submission, email_field=""):
+def find_recipient(submission, EMAIL_FIELD=""):
     """Return the respondent's address from the submission, or None."""
-    if email_field:
-        keys = [email_field]
+    if EMAIL_FIELD:
+        keys = [EMAIL_FIELD]
     else:
         keys = [key for key in submission if _EMAIL_KEY_RE.search(key)]
     for key in keys:
