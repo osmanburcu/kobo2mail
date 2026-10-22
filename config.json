@@ -2,10 +2,10 @@
   "provider": "gmail",
   "forms": {
     "default": {
-      "email_field": "email_field",
+      "deployment_details/Mail": "email_field",
       "from_name": "Survey team",
-      "subject": "Thank you $name - copy of your submission",
-      "title": "Thank you, $name!",
+      "subject": "Thank you $deployment_details/deployee_name - copy of your submission",
+      "title": "Thank you, $deployment_details/deployee_name!",
       "intro": "We have received your answers. Here is a copy for your records.",
       "brand_color": "#2b6cb0",
       "logo_url": "",
@@ -13,7 +13,7 @@
       "exclude": ["_*", "meta/*", "formhub/*", "start", "end", "contact/email", "consent"],
       "labels": {
         "contact": "Your details",
-        "name": "Full name",
+        "deployment_details/deployee_name": "Full name",
         "phone": "Phone number",
         "services_used": "Services used",
         "satisfaction": "Overall satisfaction",
@@ -30,7 +30,7 @@
       "hide_empty": true,
       "group_headers": true,
       "pdf": true,
-      "pdf_title": "Copy of your submission ($name)",
+      "pdf_title": "Copy of your submission ($deployment_details/deployee_name)",
       "pdf_filename": "submission-$submission_id.pdf"
     }
   }
